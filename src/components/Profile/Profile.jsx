@@ -1,4 +1,5 @@
 import React from 'react';
+import MyPosts from "./MyPosts/MyPosts"
 import s from "./Profile.module.css"
 
 const Profile = () => {
@@ -6,8 +7,8 @@ const Profile = () => {
     <div className={s.profile}>
       <div>
         <div />
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRntxVMoJQb7AkEvU3VTAaBJL96OCHpiX3wHA&usqp=CAU" /></div>
-
+        <img alt="photosea" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQSRJGVv5e7U6ZfuKsTm6dNLsmVAdkfVUTg6Q&usqp=CAU" /></div>
+        <MyPosts/>
     </div>
   )
 }
