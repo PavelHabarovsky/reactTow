@@ -1,6 +1,5 @@
 .profile {
-    grid-area: c;
-    background: rgb(0, 200, 174);
+  width: 100%;
 }
 .profile img {
     width: 100%;
