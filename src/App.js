@@ -8,15 +8,15 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <div className="app_wrapper_content">
-          <Route path="/profile" component={Profile}/>
-          <Route path="/dialog" component={Dialogs}/>
+          <Route path="/profile" render={() => <Profile postsData={props.postsData}/>}/>
+          <Route path="/dialog" render={() => <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData}/>}/>
          
           
         </div>

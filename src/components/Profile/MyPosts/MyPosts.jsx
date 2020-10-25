@@ -2,19 +2,19 @@ import React from 'react';
 import Post from "./Post/Post"
 import s from "./MyPosts.module.css"
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
+  let posts = props.postsData.map(dialog => <Post message={dialog.message} likeCount={dialog.likeCount} />);
+  
   return (
     <div className={s.wrapMyPosts}>
-      My Posts
+      <h3>My Posts</h3>
       <div >
         <div><textarea name="" id="" cols="10" rows="3"></textarea></div>
         <button >Add post</button>
       </div>
       <div className={s.posts}>
-        <Post message={"Hi! How are you?"} likeCount={"15"}/>
-        <Post message={"I`m fine"} likeCount={"20"}/>
-        <Post message={"I read the book"} likeCount={"50"}/>
-        <Post message={"Yo"} likeCount={"40"}/>
+      {posts}
       </div>
 
 
