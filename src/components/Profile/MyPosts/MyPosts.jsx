@@ -4,7 +4,7 @@ import s from "./MyPosts.module.css"
 
 const MyPosts = (props) => {
 
-  let posts = props.postsData.map(dialog => <Post message={dialog.message} likeCount={dialog.likeCount} />);
+  let posts = props.postsPage.postsData.map(dialog => <Post message={dialog.message} likeCount={dialog.likeCount} />);
   
   return (
     <div className={s.wrapMyPosts}>

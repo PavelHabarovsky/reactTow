@@ -3,4 +3,5 @@
 }
 .post img{
     width: 70px !important;
+    border-radius: 50%;
 }

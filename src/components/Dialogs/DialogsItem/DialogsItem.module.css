@@ -1,13 +1,23 @@
 
-.dialogs{
-    padding: 10px;
+.wrapDialogItem {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
 }
-.dialogsItem {
-    padding: 0;
-}
+
 .dialog {
-    padding: 0;
+    padding: 20px 0px 5px 5px;
+
+
 }
 .active {
     color: gold;
+}
+.ava {
+    padding: 5px;
+    width: 50px;
+    
+}
+.ava img{
+    width: 100%;
+    border-radius: 50px;
 }

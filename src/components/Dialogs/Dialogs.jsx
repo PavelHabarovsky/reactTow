@@ -9,8 +9,8 @@ import Messages from "./Messages/Messages";
 
 const Dialogs = (props) => {
 
-  let dialogsElements = props.dialogsData.map(dialog => <DialogsItem id={dialog.id} name={dialog.name}/>);
-  let messagesElements = props.messagesData.map(message => <Messages message={message.message} />);
+  let dialogsElements = props.appState.dialogsPage.dialogsData.map(dialog => <DialogsItem id={dialog.id} name={dialog.name}/>);
+  let messagesElements = props.appState.dialogsPage.messagesData.map(message => <Messages message={message.message} />);
   
   return (
     <div className={s.wrap_dialogs}>
