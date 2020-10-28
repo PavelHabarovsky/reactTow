@@ -1,4 +1,5 @@
 
+
 let state = {
   dialogsPage: {
     dialogsData: [
@@ -38,6 +39,16 @@ let state = {
   
 
 
+}
+
+export let addPost = (newPost) => {
+  
+  let newMessage = {
+    id:5,
+    message:newPost,
+    likeCount: 3,
+  };
+  state.postsPage.postsData.push(newMessage);
 }
 
 export default state
